@@ -188,25 +188,6 @@ $(this).magnificPopup({
 
 
 /*------------------------------------
-    Isotope Portfolio Filter
--------------------------------------- */
-$(window).on('load', function () {
-$(".portfolio-filter").each(function() {
-    var e = $(this);
-	var $grid = e.isotope({
-        layoutMode: "masonry",
-    });
-	$(".portfolio-menu").find("a").on("click", function() {
-        var filterValue = $(this).attr("data-filter");
-        return $(".portfolio-menu").find("a").removeClass("active"), $(this).addClass("active"), 
-		$grid.isotope({
-          filter: filterValue
-        }), !1
-    });
-	});
-});
-
-/*------------------------------------
     Parallax Background
 -------------------------------------- */
 $(".parallax").each(function () {
